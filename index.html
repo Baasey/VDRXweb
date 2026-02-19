@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$VDRX - Vanguard Digital Reserve</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -61,7 +60,7 @@
             overflow: hidden;
             box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
             background: #000;
-            height: 600px;
+            height: 400px;
         }
         iframe {
             width: 100%;
@@ -91,12 +90,18 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             border: 1px solid rgba(255,255,255,0.1);
         }
+        .btn img {
+            width: 24px;
+            height: 24px;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 2px;
+        }
         .btn:hover {
             transform: translateY(-3px);
             filter: brightness(1.2);
         }
         
-        /* Colores de las plataformas */
         .btn-zora { background: #0052FF; } 
         .btn-gmgn { background: #00B853; color: #000; } 
         .btn-dexscreener { background: #000000; border: 1px solid #333; } 
@@ -114,24 +119,24 @@
         </div>
 
         <div class="chart-container">
-            <iframe src="https://birdeye.so/tv-widget/base/0x195Bc266B4dd1Fb54984ee6c5b6486cBf7A36FE0?chain=base&viewMode=pair&chartInterval=15&chartType=CANDLE&chartTimezone=Europe/Berlin&chartLeftToolbar=show&theme=dark" title="VDRX Birdeye Chart"></iframe>
+            <iframe src="https://birdeye.so/tv-widget/base/0x195Bc266B4dd1Fb54984ee6c5b6486cBf7A36FE0?chain=base" title="VDRX Birdeye Chart"></iframe>
         </div>
 
         <div class="links">
             <a href="https://zora.co/coin/base:0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" class="btn btn-zora" target="_blank">
-                <i class="fa-solid fa-circle-nodes"></i> Zora
+                <img src="https://www.google.com/s2/favicons?domain=zora.co&sz=64" alt="Zora Icon"> Zora
             </a>
             <a href="https://gmgn.ai/base/token/0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" class="btn btn-gmgn" target="_blank">
-                <i class="fa-solid fa-chart-pie"></i> GMGN
+                <img src="https://www.google.com/s2/favicons?domain=gmgn.ai&sz=64" alt="GMGN Icon"> GMGN
             </a>
             <a href="https://dexscreener.com/base/0x4edb63492e233131265a1f8d57850524c5c724fd7bcbe7f39c9c4a6963f962dc" class="btn btn-dexscreener" target="_blank">
-                <i class="fa-solid fa-magnifying-glass-chart"></i> Dexscreener
+                <img src="https://www.google.com/s2/favicons?domain=dexscreener.com&sz=64" alt="Dexscreener Icon"> Dexscreener
             </a>
             <a href="https://matcha.xyz/tokens/base/0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" class="btn btn-matcha" target="_blank">
-                <i class="fa-solid fa-leaf"></i> Matcha
+                <img src="https://www.google.com/s2/favicons?domain=matcha.xyz&sz=64" alt="Matcha Icon"> Matcha
             </a>
             <a href="https://birdeye.so/base/token/0x195Bc266B4dd1Fb54984ee6c5b6486cBf7A36FE0" class="btn btn-birdeye" target="_blank">
-                <i class="fa-solid fa-eye"></i> Birdeye
+                <img src="https://www.google.com/s2/favicons?domain=birdeye.so&sz=64" alt="Birdeye Icon"> Birdeye
             </a>
         </div>
     </div>
