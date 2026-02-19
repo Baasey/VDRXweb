@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDRX - Vanguard Digital Reserve</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000510;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .overlay {
+            background: rgba(0, 5, 16, 0.85);
+            min-height: 100vh;
+            padding: 50px 20px;
+            box-sizing: border-box;
+        }
+        .header {
+            margin-bottom: 40px;
+        }
+        .logo {
+            width: 250px;
+            filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.5));
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #FFD700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+        p.tagline {
+            font-size: 1.2em;
+            color: #e0e0e0;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+        }
+        .chart-container {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+            background: #000;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            background: linear-gradient(135deg, #FFD700, #B8860B);
+            color: #000;
+            text-decoration: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5);
+            background: linear-gradient(135deg, #FFDF00, #DAA520);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="header">
+            <img src="logo.jpg" alt="VDRX Logo" class="logo">
+            <h1>VDRX: The Gold Standard in the Digital Age</h1>
+            <p class="tagline">An asset designed to offer solidity and security on the Base network. Check the market in real-time and access our official exchange platforms directly.</p>
+        </div>
 
+        <div class="chart-container">
+            <iframe src="https://gmgn.ai/base/token/0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" title="VDRX Chart"></iframe>
+        </div>
+
+        <div class="links">
+            <a href="https://zora.co/coin/base:0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" class="btn" target="_blank">Buy on Zora</a>
+            <a href="https://gmgn.ai/base/token/0x195bc266b4dd1fb54984ee6c5b6486cbf7a36fe0" class="btn" target="_blank">Trade on GMGN</a>
+            <a href="https://dexscreener.com/base/0x4edb63492e233131265a1f8d57850524c5c724fd7bcbe7f39c9c4a6963f962dc" class="btn" target="_blank">View Dexscreener</a>
+        </div>
+    </div>
+</body>
+</html>
